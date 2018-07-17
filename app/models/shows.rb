@@ -6,8 +6,8 @@ class Show < ActiveRecord::Base
   
   def self.most_popular_show
     show = Show.new 
-    = Show.limit(1).order('rating desc')
-    show
+    show.limit(1).order('rating desc')
+  
   end
   
 end
